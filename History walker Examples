@@ -1,0 +1,48 @@
+var stateUpdateNr;
+var getRelatedTaxGR = new GlideRecord('x_104357_sec_inc_open_suma_case');
+getRelatedTaxGR.addEncodedQuery("security_incident_numberINSUMA0331933,SUMA0331935");
+getRelatedTaxGR.query();
+while (getRelatedTaxGR.next()) {    
+    
+    var hwTax = new sn_hw.HistoryWalker('x_104357_sec_inc_open_suma_case', getRelatedTaxGR.getUniqueValue());
+    hwTax.walkTo(0);
+    while (hwTax.walkForward()) 
+    {
+        if (hwTax.getWalkedRecord().risk_in_eur != '') 
+        {
+            stateUpdateNr = hwTax.getUpdateNumber();
+            break;   
+        }
+    }
+hwTax.walkTo(stateUpdateNr);
+var oldNum = hwTax.getWalkedRecordCopy();
+gs.debug("Number.."+hwTax.getWalkedRecordCopy().number+"..."+oldNum.risk_in_eur);
+gs.debug("NUMBBEr.." + stateUpdateNr); 
+
+}
+
+**********************************************************
+Working Code - Exact Risk in EUR
+**********************************************************
+
+var stateUpdateNr;
+var getRelatedTaxGR = new GlideRecord('x_104357_sec_inc_open_suma_case');
+getRelatedTaxGR.addEncodedQuery("security_incident_numberINSUMA0418551,SUMA0418718,SUMA0418898,SUMA0419162");
+getRelatedTaxGR.query();
+while (getRelatedTaxGR.next()) {    
+    
+    var hwTax = new sn_hw.HistoryWalker('x_104357_sec_inc_open_suma_case', getRelatedTaxGR.getUniqueValue());
+    hwTax.walkTo(0);
+    while (hwTax.walkForward()) 
+    {
+        if (hwTax.getWalkedRecord().risk_in_eur != '0') 
+        {
+            stateUpdateNr = hwTax.getUpdateNumber();
+            //break;   
+        }
+    }
+hwTax.walkTo(stateUpdateNr);
+var oldNum = hwTax.getWalkedRecordCopy();
+gs.debug("Number.."+hwTax.getWalkedRecordCopy().number+"..."+oldNum.risk_in_eur);
+gs.debug("NUMBBEr.." + stateUpdateNr); 
+}
