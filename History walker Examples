@@ -46,3 +46,37 @@ var oldNum = hwTax.getWalkedRecordCopy();
 gs.debug("Number.."+hwTax.getWalkedRecordCopy().number+"..."+oldNum.risk_in_eur);
 gs.debug("NUMBBEr.." + stateUpdateNr); 
 }
+
+*********************************************************
+History Walker with Array
+*********************************************************
+
+var getRelatedTaxGR = new GlideRecord('x_104357_sec_inc_deniedparty_case');
+getRelatedTaxGR.addEncodedQuery("sys_created_on>javascript:gs.beginningOfLast3Months()^sys_updated_by=sn_operator_shats");
+getRelatedTaxGR.setLimit(10000);
+getRelatedTaxGR.query();
+var IncidentsAfterAsses = [];
+
+while (getRelatedTaxGR.next()){
+    var hwTax = new sn_hw.HistoryWalker('x_104357_sec_inc_deniedparty_case', getRelatedTaxGR.getUniqueValue());
+    hwTax.walkTo(0);
+    while (hwTax.walkForward()) {
+		var stateUpdateNr = hwTax.getUpdateNumber();
+		}
+		hwTax.walkTo(stateUpdateNr);
+		var oldNum = hwTax.getWalkedRecordCopy();
+		//gs.info("Number.."+stateUpdateNr);
+		gs.info("Last Updated by..." + "Number.."+hwTax.getWalkedRecordCopy().number+"..."+oldNum.sys_updated_by);
+		{
+            IncidentsAfterAsses.push(hwTax.getWalkedRecordCopy().number);
+        }   
+	
+		getRelatedTaxGR.sys_updated_by = oldNum.sys_updated_by;
+		getRelatedTaxGR.setWorkflow(false);
+		getRelatedTaxGR.autoSysFields(false);
+		getRelatedTaxGR.update();
+	
+    }
+gs.info("All incidents added after the problem went into state Assess: " + IncidentsAfterAsses);
+
+
