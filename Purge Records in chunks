@@ -1,0 +1,17 @@
+var limitingRecordsperChunk = 50000;
+ var sWorkflow = false;
+ var rowCount = 1;
+ var gr = new GlideRecord("x_104357_sec_inc_aqcc");
+ gr.addEncodedQuery("exception_case=true^closed_atISEMPTY^active=false^sys_created_on<javascript:gs.dateGenerate('2022-11-01','00:00:00')");
+ gr.setLimit(limitingRecordsperChunk);
+ gr.setWorkflow(sWorkflow);
+
+ while (rowCount > 0) {
+     gr.query();
+     rowCount = gr.getRowCount();
+     while (gr.next()) {
+         gr.deleteRecord();
+     }
+     gs.sleep(10000);
+     gs.info("Deleted Shipment Exception ----" + rowCount + " number of records");
+ }
