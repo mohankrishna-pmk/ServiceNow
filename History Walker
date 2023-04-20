@@ -1,0 +1,57 @@
+var currentDate = gs.nowDateTime();
+
+var Headers = ["SUMA Number", "Risk In EUR"];
+var fileName = "DPA_Updated_Details_" + currentDate + ".csv";
+var csvData = '';
+for (var i = 0; i < Headers.length; i++) {
+    csvData = csvData + '"' + Headers[i] + '"' + ',';
+}
+csvData = csvData + "\r\n";
+
+
+/*-------------------------------------------------------- 
+BackWard Approach
+--------------------------------------------------------
+var incGr = new GlideRecord("x_104357_sec_inc_open_suma_case");
+incGr.addEncodedQuery("state=3^sys_created_onBETWEENjavascript:gs.dateGenerate('2023-01-01','00:00:00')@javascript:gs.dateGenerate('2023-01-31','23:59:59')");
+incGr.setLimit(1000);
+incGr.query();
+while (incGr.next()) {
+    var hw = new sn_hw.HistoryWalker(incGr.getTableName(), incGr.getUniqueValue());
+    hw.walkTo(incGr.sys_mod_count);
+    while (hw.walkBackward()) {
+        var risk_in = hw.getWalkedRecord().risk_in_eur;
+        csvData = csvData + '"' + incGr.number + '",' + '"' + risk_in + '",';
+        csvData = csvData + "\r\n";
+        break;
+    }
+}*/
+
+var stateUpdateNr;
+var getRelatedTaxGR = new GlideRecord('x_104357_sec_inc_open_suma_case');
+getRelatedTaxGR.addEncodedQuery("state=3^sys_created_onBETWEENjavascript:gs.dateGenerate('2023-01-01','00:00:00')@javascript:gs.dateGenerate('2023-01-31','23:59:59')");
+getRelatedTaxGR.setLimit(1000);
+getRelatedTaxGR.query();
+while (getRelatedTaxGR.next()) {
+    var hwTax = new sn_hw.HistoryWalker('x_104357_sec_inc_open_suma_case', getRelatedTaxGR.getUniqueValue());
+    hwTax.walkTo(0);
+    while (hwTax.walkForward()) {
+        if (hwTax.getWalkedRecord().risk_in_eur != '0') {
+            stateUpdateNr = hwTax.getUpdateNumber();
+            //break;   
+        }
+    }
+    hwTax.walkTo(stateUpdateNr);
+    var oldNum = hwTax.getWalkedRecordCopy();
+    csvData = csvData + '"' + hwTax.getWalkedRecordCopy().number + '",' + '"' + oldNum.risk_in_eur + '",';
+    csvData = csvData + "\r\n";
+}
+
+//attach the file to a record.
+var grRec = new GlideRecord("sys_user");
+grRec.addQuery("sys_id", "9e6cddc7dbe78d10b1ba54ebd39619fa");
+grRec.query();
+if (grRec.next()) {
+    var grAttachment = new GlideSysAttachment();
+    grAttachment.write(grRec, fileName, 'application/csv', csvData);
+}
