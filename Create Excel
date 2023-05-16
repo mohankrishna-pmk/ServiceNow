@@ -1,0 +1,17 @@
+var URL = gs.getProperty('glide.servlet.uri');
+URL = URL + 'x_104357_sec_inc_open_suma_case_list.do?XLSX&';
+URL = URL + 'sysparm_query=state!%3D4%5Eapp_batch_number%3D' + 22324 + '%5EORDERBYcategory_of_resolution_duties%5EORDERBYdate_bond_deadline%5EORDERBYawb_number&sysparm_view=fa_export';
+
+this.Excelrestcall(URL, 'x_104357_sec_inc_open_suma_application', sumaApplication.sys_id, 'EA_' + ndob.getByFormat("ddMMyyyy") + '.xlsx');
+
+Excelrestcall: function(URL, tabled, sysid, filename) {
+var user = "OSuma_Integration_Dev";
+var password = "af6EGmLn4yXG";
+var request = new sn_ws.RESTMessageV2();
+request.setEndpoint(URL);
+request.setHttpMethod("GET");
+request.setBasicAuth(user, password);
+request.saveResponseBodyAsAttachment('sys_user', '077339371bdcc1101a46b80c9b4bcbbc', 'test.xlsx');
+var response = request.execute();
+var httpStatus = response.getStatusCode();
+}
