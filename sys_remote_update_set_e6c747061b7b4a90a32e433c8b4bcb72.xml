@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2024-08-05 10:03:54">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>DHLEX DBpurge CNA v2</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>f7a5bd6087f74ed0857633f669bb35c9</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>snc_operator_mokrish1</sys_created_by>
+<sys_created_on>2024-08-05 10:03:52</sys_created_on>
+<sys_id>e6c747061b7b4a90a32e433c8b4bcb72</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>snc_operator_mokrish1</sys_updated_by>
+<sys_updated_on>2024-08-05 10:03:52</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_list_u_ecase_purge_table_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="u_ecase_purge_table" version="2" view=""><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_number</element><list_id display_value="u_ecase_purge_table" element="NULL" name="u_ecase_purge_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4c94752c87b74ed0857633f669bb3595</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>snc_operator_cnavrati</sys_created_by><sys_created_on>2024-07-19 14:04:20</sys_created_on><sys_id>0bcb1078db23ca54b1ba54ebd396197f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>snc_operator_cnavrati</sys_updated_by><sys_updated_on>2024-07-19 14:04:20</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_status</element><list_id display_value="u_ecase_purge_table" element="NULL" name="u_ecase_purge_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4c94752c87b74ed0857633f669bb3595</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>snc_operator_cnavrati</sys_created_by><sys_created_on>2024-07-19 14:04:20</sys_created_on><sys_id>43cb1078db23ca54b1ba54ebd3961980</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>snc_operator_cnavrati</sys_updated_by><sys_updated_on>2024-07-19 14:04:20</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_executed_by</element><list_id display_value="u_ecase_purge_table" element="NULL" name="u_ecase_purge_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4c94752c87b74ed0857633f669bb3595</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>snc_operator_cnavrati</sys_created_by><sys_created_on>2024-07-19 14:04:20</sys_created_on><sys_id>47cb1078db23ca54b1ba54ebd3961980</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>snc_operator_cnavrati</sys_updated_by><sys_updated_on>2024-07-19 14:04:20</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_table_name</element><list_id display_value="u_ecase_purge_table" element="NULL" name="u_ecase_purge_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4c94752c87b74ed0857633f669bb3595</list_id><max_value>false</max_value><min_value>false</min_value><position>3</position><sum>false</sum><sys_created_by>snc_operator_cnavrati</sys_created_by><sys_created_on>2024-07-19 14:04:20</sys_created_on><sys_id>4bcb1078db23ca54b1ba54ebd3961980</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>snc_operator_cnavrati</sys_updated_by><sys_updated_on>2024-07-19 14:04:20</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_start_date</element><list_id display_value="u_ecase_purge_table" element="NULL" name="u_ecase_purge_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4c94752c87b74ed0857633f669bb3595</list_id><max_value>false</max_value><min_value>false</min_value><position>4</position><sum>false</sum><sys_created_by>snc_operator_cnavrati</sys_created_by><sys_created_on>2024-07-19 14:04:20</sys_created_on><sys_id>4fcb1078db23ca54b1ba54ebd3961980</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>snc_operator_cnavrati</sys_updated_by><sys_updated_on>2024-07-19 14:04:20</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_end_date</element><list_id display_value="u_ecase_purge_table" element="NULL" name="u_ecase_purge_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4c94752c87b74ed0857633f669bb3595</list_id><max_value>false</max_value><min_value>false</min_value><position>5</position><sum>false</sum><sys_created_by>snc_operator_cnavrati</sys_created_by><sys_created_on>2024-07-19 14:04:20</sys_created_on><sys_id>43cb1078db23ca54b1ba54ebd3961981</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>snc_operator_cnavrati</sys_updated_by><sys_updated_on>2024-07-19 14:04:20</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_purge_end</element><list_id display_value="u_ecase_purge_table" element="NULL" name="u_ecase_purge_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4c94752c87b74ed0857633f669bb3595</list_id><max_value>false</max_value><min_value>false</min_value><position>6</position><sum>false</sum><sys_created_by>snc_operator_cnavrati</sys_created_by><sys_created_on>2024-07-19 14:04:20</sys_created_on><sys_id>47cb1078db23ca54b1ba54ebd3961981</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>snc_operator_cnavrati</sys_updated_by><sys_updated_on>2024-07-19 14:04:20</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_purge_duration</element><list_id display_value="u_ecase_purge_table" element="NULL" name="u_ecase_purge_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4c94752c87b74ed0857633f669bb3595</list_id><max_value>false</max_value><min_value>false</min_value><position>7</position><sum>false</sum><sys_created_by>snc_operator_cnavrati</sys_created_by><sys_created_on>2024-07-19 14:04:20</sys_created_on><sys_id>4bcb1078db23ca54b1ba54ebd3961981</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>snc_operator_cnavrati</sys_updated_by><sys_updated_on>2024-07-19 14:04:20</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_already_deleted</element><list_id display_value="u_ecase_purge_table" element="NULL" name="u_ecase_purge_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4c94752c87b74ed0857633f669bb3595</list_id><max_value>false</max_value><min_value>false</min_value><position>8</position><sum>true</sum><sys_created_by>snc_operator_cnavrati</sys_created_by><sys_created_on>2024-07-19 14:04:20</sys_created_on><sys_id>4fcb1078db23ca54b1ba54ebd3961981</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>snc_operator_cnavrati</sys_updated_by><sys_updated_on>2024-07-19 14:05:10</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_number_of_records_to_delete</element><list_id display_value="u_ecase_purge_table" element="NULL" name="u_ecase_purge_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4c94752c87b74ed0857633f669bb3595</list_id><max_value>false</max_value><min_value>false</min_value><position>9</position><sum>true</sum><sys_created_by>snc_operator_cnavrati</sys_created_by><sys_created_on>2024-07-19 14:04:20</sys_created_on><sys_id>43cb1078db23ca54b1ba54ebd3961982</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>snc_operator_cnavrati</sys_updated_by><sys_updated_on>2024-07-19 14:05:33</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_number_of_days</element><list_id display_value="u_ecase_purge_table" element="NULL" name="u_ecase_purge_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4c94752c87b74ed0857633f669bb3595</list_id><max_value>false</max_value><min_value>false</min_value><position>10</position><sum>false</sum><sys_created_by>snc_operator_cnavrati</sys_created_by><sys_created_on>2024-07-19 14:04:20</sys_created_on><sys_id>47cb1078db23ca54b1ba54ebd3961982</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>snc_operator_cnavrati</sys_updated_by><sys_updated_on>2024-07-19 14:04:20</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>u_condition</element><list_id display_value="u_ecase_purge_table" element="NULL" name="u_ecase_purge_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">4c94752c87b74ed0857633f669bb3595</list_id><max_value>false</max_value><min_value>false</min_value><position>11</position><sum>false</sum><sys_created_by>snc_operator_cnavrati</sys_created_by><sys_created_on>2024-07-19 14:04:20</sys_created_on><sys_id>4bcb1078db23ca54b1ba54ebd3961982</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>snc_operator_cnavrati</sys_updated_by><sys_updated_on>2024-07-19 14:04:20</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>u_ecase_purge_table</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>snc_operator_cnavrati</sys_created_by><sys_created_on>2024-07-19 14:04:20</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4c94752c87b74ed0857633f669bb3595</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_ecase_purge_table</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_list_u_ecase_purge_table_null</sys_update_name><sys_updated_by>snc_operator_cnavrati</sys_updated_by><sys_updated_on>2024-07-19 14:04:20</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+<payload_hash>-951529761</payload_hash>
+<remote_update_set display_value="DHLEX DBpurge CNA v2">e6c747061b7b4a90a32e433c8b4bcb72</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>snc_operator_mokrish1</sys_created_by>
+<sys_created_on>2024-08-05 10:03:53</sys_created_on>
+<sys_id>2ac747061b7b4a90a32e433c8b4bcb74</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19108b661380000001</sys_recorded_at>
+<sys_updated_by>snc_operator_mokrish1</sys_updated_by>
+<sys_updated_on>2024-08-05 10:03:53</sys_updated_on>
+<table>u_ecase_purge_table</table>
+<target_name>eCase Purge table</target_name>
+<type>List Layout</type>
+<update_domain>global</update_domain>
+<update_guid>381c903cfa23ca544933ab92580ac749</update_guid>
+<update_guid_history>381c903cfa23ca544933ab92580ac749:-951529761,1ffb9474c023ca54fae4e7d1ca0e87d7:1810494982,43cb10789123ca546a564ea7f9fbdf85:997690453,51bbb71508f28294edf914a69df1dfa0:-342313295,cc94b16ce5b74ed092d9be9de516f224:-1147403781</update_guid_history>
+<update_set display_value=""/>
+<view>Default view</view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sysauto_script_7b45690ddbcb0a50b1ba54ebd396197f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sysauto_script"&gt;&lt;sysauto_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;business_calendar/&gt;&lt;condition/&gt;&lt;conditional&gt;false&lt;/conditional&gt;&lt;entered_time/&gt;&lt;max_drift/&gt;&lt;name&gt;Run purging jobs_2&lt;/name&gt;&lt;offset/&gt;&lt;offset_type&gt;0&lt;/offset_type&gt;&lt;run_as display_value="Operator Ctirad Navratil"&gt;6df6d9491bd445d81a46b80c9b4bcb09&lt;/run_as&gt;&lt;run_as_tz/&gt;&lt;run_dayofmonth&gt;1&lt;/run_dayofmonth&gt;&lt;run_dayofweek&gt;1&lt;/run_dayofweek&gt;&lt;run_period&gt;1970-01-01 00:03:00&lt;/run_period&gt;&lt;run_start&gt;2024-06-21 13:43:43&lt;/run_start&gt;&lt;run_time&gt;1969-12-31 23:00:00&lt;/run_time&gt;&lt;run_type&gt;periodically&lt;/run_type&gt;&lt;script&gt;&lt;![CDATA[(function() {
+
+    var maxParalelJobs = gs.getProperty('dhlex.purge.concurrent_jobs', 1);
+    var tableName = 'u_ecase_purge_table';
+    if (new global.tablesToPurge().getJob(tableName, maxParalelJobs)) {
+        new global.tablesToPurge().purgeFrom(tableName, current.name);
+    }
+})();]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sysauto_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;snc_operator_cnavrati&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-25 17:32:35&lt;/sys_created_on&gt;&lt;sys_id&gt;7b45690ddbcb0a50b1ba54ebd396197f&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;Run purging jobs_2&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysauto_script_7b45690ddbcb0a50b1ba54ebd396197f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;snc_operator_cnavrati&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-29 12:55:18&lt;/sys_updated_on&gt;&lt;time_zone/&gt;&lt;upgrade_safe&gt;false&lt;/upgrade_safe&gt;&lt;/sysauto_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1257143101</payload_hash>
+<remote_update_set display_value="DHLEX DBpurge CNA v2">e6c747061b7b4a90a32e433c8b4bcb72</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>snc_operator_mokrish1</sys_created_by>
+<sys_created_on>2024-08-05 10:03:53</sys_created_on>
+<sys_id>2ec747061b7b4a90a32e433c8b4bcb73</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19108b661630000001</sys_recorded_at>
+<sys_updated_by>snc_operator_mokrish1</sys_updated_by>
+<sys_updated_on>2024-08-05 10:03:53</sys_updated_on>
+<table/>
+<target_name>Run purging jobs_2</target_name>
+<type>Scheduled Script Execution</type>
+<update_domain>global</update_domain>
+<update_guid>797c2fb769e74a10b29d9aba3915f53c</update_guid>
+<update_guid_history>797c2fb769e74a10b29d9aba3915f53c:-1257143101,3bb7a0b462e7ca54abafc8532ff48162:-716623552,8543a106d7c7021040f13f5f615fc0e9:-481618944,4ce225c234c702100cc0fc42635cc2e6:-481618944,ac7009114acbc290e76b1ec6190b3d6c:-716120565</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_c3dee8670a0a0aa70064b48de5ad973e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>List of system tables (beginning with "sys_", comma separated), that are reportable. By default, system tables are not reportable. &#13;
+		</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>glide.ui.permitted_tables</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>glide.maint</sys_created_by><sys_created_on>2007-05-25 15:34:12</sys_created_on><sys_id>c3dee8670a0a0aa70064b48de5ad973e</sys_id><sys_mod_count>21</sys_mod_count><sys_name>glide.ui.permitted_tables</sys_name><sys_package display_value="System (glidesoft)" source="glidesoft">f7642f120f320300962405ace1050ec4</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_c3dee8670a0a0aa70064b48de5ad973e</sys_update_name><sys_updated_by>snc_operator_cnavrati</sys_updated_by><sys_updated_on>2024-07-19 13:59:54</sys_updated_on><type>string</type><value>sys_db_object,sys_user,sys_audit,syslog_transaction,sys_user_group,sys_user_grmember,sys_dictionary,sysapproval_approver,sys_user_has_role,sys_group_has_role,sys_user_delegate,sys_report_page_hdrftr,sysapproval_group,sys_api_stats,sys_api_stats_requestor,sys_api_stats_requestor_monthly,v_api_stats_requestor,sys_portal_page,sys_report,sys_alias,sys_complex_object_output_strategy,sys_upgrade_history_log,sys_hub_flow,sys_hub_action_type_definition,sys_aw_master_config,sys_ux_app_config,sys_ui_page,sys_ux_page_registry,sys_email,sys_history_line, sys_user_has_skill,sys_user_has_license,sys_outbound_http_log,sysevent,sys_progress_worker,syslog, sys_journal_field</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=c3dee8670a0a0aa70064b48de5ad973e"/><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>cs</language><sys_created_by>system</sys_created_by><sys_created_on>2022-01-23 09:06:37</sys_created_on><sys_id>c514d3901b99c1108bfc42229b4bcbf9</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-01-23 09:06:37</sys_updated_on><tablename>sys_properties</tablename><value>Seznam systémových tabulek (začínajících řetězcem „sys_“, seznam s položkami oddělenými čárkami), ze kterých lze vytvářet sestavy. Ve výchozím nastavení ze systémových tabulek nelze vytvářet sestavy.</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>de</language><sys_created_by>system</sys_created_by><sys_created_on>2022-01-08 11:01:56</sys_created_on><sys_id>ccae9a23db3c011010232e730596199e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-01-08 11:01:56</sys_updated_on><tablename>sys_properties</tablename><value>Liste von Systemtabellen (beginnend mit "sys_", kommagetrennt), zu denen Berichte erstellt werden können. Standardmäßig können keine Berichte zu Systemtabellen erstellt werden.</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>es</language><sys_created_by>system</sys_created_by><sys_created_on>2022-01-23 13:54:13</sys_created_on><sys_id>75e510a41b910510ec4663936b4bcb4c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-01-23 13:54:13</sys_updated_on><tablename>sys_properties</tablename><value>Lista de tablas del sistema (comenzando por "sys_", separado por comas) que se pueden incluir en el informe. De forma predefinida, las tablas del sistema no se pueden incluir en informes.</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>fi</language><sys_created_by/><sys_created_on/><sys_id>3106a3cf1bd106101118986c9b4bcb77</sys_id><sys_mod_count/><sys_updated_by/><sys_updated_on/><tablename>sys_properties</tablename><value>Luettelo järjestelmätaulukoista (alkaa sys_, pilkuilla eroteltu), jotka ovat raportoitavissa. Oletuksena järjestelmätaulukot eivät ole raportoitavissa.
+		</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>fq</language><sys_created_by/><sys_created_on/><sys_id>dfff9f0f1b1106101118986c9b4bcbe9</sys_id><sys_mod_count/><sys_updated_by/><sys_updated_on/><tablename>sys_properties</tablename><value>Liste des tableaux de système (commençant par "sys_", séparés par des virgules) qui peuvent être déclarés. Par défaut, les tableaux du système ne peuvent pas être déclarés.
+		</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>fr</language><sys_created_by>css_admin</sys_created_by><sys_created_on>2022-01-22 17:25:48</sys_created_on><sys_id>1bbcf340db15811092cd2b65059619d9</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>css_admin</sys_updated_by><sys_updated_on>2022-01-22 17:25:48</sys_updated_on><tablename>sys_properties</tablename><value>Liste de tables système (commençant par"sys_" séparées par des virgules) qui peuvent figurer dans un rapport. Par défaut, les tables système ne peuvent pas figurer dans un rapport.</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>he</language><sys_created_by>system</sys_created_by><sys_created_on>2022-01-23 18:48:16</sys_created_on><sys_id>5d39d9ac1b95c110389110628b4bcb9f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-01-23 18:48:16</sys_updated_on><tablename>sys_properties</tablename><value>רשימת טבלאות המערכת (מתחילה במחרוזת "_sys"; מופרדת באמצעות פסיקים) הניתנות לדיווח. כברירת מחדל, טבלאות מערכת אינן ניתנות לדיווח.</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>hu</language><sys_created_by/><sys_created_on/><sys_id>5a09db0b1b5dc2101118986c9b4bcb76</sys_id><sys_mod_count/><sys_updated_by/><sys_updated_on/><tablename>sys_properties</tablename><value>Azoknak a rendszertábláknak listája "sys_" táblával kezdve, vesszővel elválasztva), amelyekről jelentés készíthető. Alapértelmezés szerint a rendszertáblákról nem készíthető jelentés.
+		</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>it</language><sys_created_by>system</sys_created_by><sys_created_on>2022-01-08 14:00:49</sys_created_on><sys_id>ec978b23dbfc411010232e73059619e0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-01-08 14:00:49</sys_updated_on><tablename>sys_properties</tablename><value>Elenco di tabelle di sistema (che iniziano con "sys_", separato da virgole), che sono segnalabili. Per impostazione predefinita, le tabelle di sistema non sono segnalabili.</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>ja</language><sys_created_by>system</sys_created_by><sys_created_on>2022-02-06 15:25:17</sys_created_on><sys_id>50017005dba5095092cd2b65059619a5</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-02-06 15:25:17</sys_updated_on><tablename>sys_properties</tablename><value>レポート可能なシステムテーブルのリスト ("sys_" から始まる、カンマ区切り形式)。デフォルトでは、システムテーブルはレポート不可能です。</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>ko</language><sys_created_by>css_admin</sys_created_by><sys_created_on>2022-02-12 17:35:36</sys_created_on><sys_id>fb588c031be1015042b8a64e3b4bcbbb</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>css_admin</sys_updated_by><sys_updated_on>2022-02-12 17:35:36</sys_updated_on><tablename>sys_properties</tablename><value>보고 가능한 시스템 테이블 목록("sys_"로 시작되고, 쉼표로 구분됨). 기본적으로 시스템 테이블은 보고할 수 없습니다.</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>nb</language><sys_created_by>system</sys_created_by><sys_created_on>2022-01-08 12:32:00</sys_created_on><sys_id>ef333e2bdb74411010232e73059619d7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-01-08 12:32:00</sys_updated_on><tablename>sys_properties</tablename><value>Liste over systemtabeller (som begynner med «sys_», og er kommadelt), som kan rapporteres. Systemtabeller kan som standard ikke rapporteres.</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>nl</language><sys_created_by>system</sys_created_by><sys_created_on>2022-01-22 22:40:58</sys_created_on><sys_id>94e4cd541b1d81109aa7fd509b4bcbab</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-01-22 22:40:58</sys_updated_on><tablename>sys_properties</tablename><value>Lijst van systeemtabellen (beginnend met "sys_", met komma's gescheiden) die kunnen worden opgenomen in rapporten. Systeemtabellen kunnen standaard niet worden opgenomen in rapporten.</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>pb</language><sys_created_by/><sys_created_on/><sys_id>140ca7831bd506101118986c9b4bcbd9</sys_id><sys_mod_count/><sys_updated_by/><sys_updated_on/><tablename>sys_properties</tablename><value>Lista de tabelas do sistema (começando com "sys_", separadas por vírgulas) que são passíveis de geração de relatório. Como padrão, as tabelas do sistema não são portáteis.
+		</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>pl</language><sys_created_by>system</sys_created_by><sys_created_on>2022-01-23 23:37:37</sys_created_on><sys_id>f76b96641bd145104b7c99b59b4bcb32</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-01-23 23:37:37</sys_updated_on><tablename>sys_properties</tablename><value>Lista tabel systemowych (rozpoczynających się od "sys_" i rozdzielonych przecinkami), które mogą być uwzględniane w raportach. Domyślnie tabele systemowe nie są uwzględniane w raportach.</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>pt</language><sys_created_by>css_admin</sys_created_by><sys_created_on>2022-02-05 19:40:13</sys_created_on><sys_id>45c1acfc1b65c1509aa7fd509b4bcb99</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>css_admin</sys_updated_by><sys_updated_on>2022-02-05 19:40:13</sys_updated_on><tablename>sys_properties</tablename><value>Lista de tabelas de sistema (que começam por "sys_", separadas por vírgulas) que podem ser reportadas. Por predefinição, as tabelas de sistema não são reportadas.</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>ru</language><sys_created_by>system</sys_created_by><sys_created_on>2022-02-06 00:17:40</sys_created_on><sys_id>d541ad301be185104b7c99b59b4bcbda</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-02-06 00:17:40</sys_updated_on><tablename>sys_properties</tablename><value>Список системных таблиц (начинаются с «sys_», разделены запятыми), пригодных для составления отчетов. По умолчанию системные таблицы непригодны для отчетов.</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>sv</language><sys_created_by>system</sys_created_by><sys_created_on>2022-01-23 04:28:50</sys_created_on><sys_id>0084da18db15c110dbf45a3bd3961935</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-01-23 04:28:50</sys_updated_on><tablename>sys_properties</tablename><value>Lista över systemtabeller (som börjar med ”sys_”, kommaavgränsade), som kan rapporteras. Som standard går det inte att rapportera systemtabeller.</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>th</language><sys_created_by>css_admin</sys_created_by><sys_created_on>2022-02-13 03:42:50</sys_created_on><sys_id>f6535acf1b69815042b8a64e3b4bcb42</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>css_admin</sys_updated_by><sys_updated_on>2022-02-13 03:42:50</sys_updated_on><tablename>sys_properties</tablename><value>รายการของตารางระบบ (ขึ้นต้นด้วย "sys_", และคั่นด้วยเครื่องหมายจุลภาค) ที่สามารถรายงานได้ ตามค่าเริ่มต้น ตารางระบบไม่สามารถรายงานได้</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>tr</language><sys_created_by>system</sys_created_by><sys_created_on>2022-02-06 05:32:12</sys_created_on><sys_id>6449a2b41be901901d3441939b4bcb1a</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-02-06 05:32:12</sys_updated_on><tablename>sys_properties</tablename><value>Raporlanabilen sistem tabloları listesi ("sys_" ile başlayan, virgülle ayrılmış). Varsayılan olarak, sistem tabloları raporlanamaz.</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>zh</language><sys_created_by>css_admin</sys_created_by><sys_created_on>2022-02-13 08:25:17</sys_created_on><sys_id>88041fc71be9055042b8a64e3b4bcba0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>css_admin</sys_updated_by><sys_updated_on>2022-02-13 08:25:17</sys_updated_on><tablename>sys_properties</tablename><value>可报告的系统表列表(以“sys_”开头，逗号分隔)。默认情况下，系统表格是不可报告的。</value></sys_translated_text><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.permitted_tables" tablename="sys_properties">c3dee8670a0a0aa70064b48de5ad973e</documentkey><fieldname>description</fieldname><language>zt</language><sys_created_by>system</sys_created_by><sys_created_on>2022-02-06 10:48:42</sys_created_on><sys_id>a4b1b3701be1099042b8a64e3b4bcb8b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-02-06 10:48:42</sys_updated_on><tablename>sys_properties</tablename><value>可報告的系統資料表清單 (從 "sys_" 開始，以逗號分隔)。根據預設，系統資料表不能進行提報。</value></sys_translated_text></record_update>]]></payload>
+<payload_hash>-1914658051</payload_hash>
+<remote_update_set display_value="DHLEX DBpurge CNA v2">e6c747061b7b4a90a32e433c8b4bcb72</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>snc_operator_mokrish1</sys_created_by>
+<sys_created_on>2024-08-05 10:03:53</sys_created_on>
+<sys_id>66c747061b7b4a90a32e433c8b4bcb74</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19108b661290000001</sys_recorded_at>
+<sys_updated_by>snc_operator_mokrish1</sys_updated_by>
+<sys_updated_on>2024-08-05 10:03:53</sys_updated_on>
+<table/>
+<target_name>glide.ui.permitted_tables</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>16ca98fcf2ef8a545001ebec1442d8a3</update_guid>
+<update_guid_history>16ca98fcf2ef8a545001ebec1442d8a3:-1914658051,15dd66da7332c210cbaae3e1981f5dad:525204633,115d4d119831295410e1f7ffd403a9e3:913708821,75aac55998fde554be69d9807e593e4d:-1680772180,e7f6699f6cc52d546a301a8eb9c7344b:-1085435353,de366d1f83c52d54e1e37d58c9a75989:70768365,685ebc09bea995102f2e58a48d95fe44:-1085435353,b9b965de59db5950ee889318fcfc8715:2565704,23424e60b2f591106eb251e8924db877:-1250260724,0aa5d72013e14150738c6f055ca72c6a:-2030630520,64d8a6405d910110f39636442bd942f5:-306917151,a77b07a9a9dcc5903d48e7062e5daa2f:-1348491999,a5aed7e15ccb381063a540ec75e49cfc:1587033429,8539536d808b3810a608c2a73a46e12b:807751019,5c08d3e9ba8b381010bd497aa47b3e88:1587033429,c1d79155a0cbb4544485757967041316:497642620,c1d791559ccbb454010dd0ccaaa84813:1357300373,20d212259d0370145f79569241fe9b70:1357300373,15b33da3a7043014cf7428254c975715:1567174764,51b33da3380430142c7573ca1cce7513:1357300373</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sysauto_script_55e7e4f4dbe7ca54b1ba54ebd39619ba</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sysauto_script"&gt;&lt;sysauto_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;business_calendar/&gt;&lt;condition/&gt;&lt;conditional&gt;false&lt;/conditional&gt;&lt;entered_time/&gt;&lt;max_drift/&gt;&lt;name&gt;Run purging jobs_4&lt;/name&gt;&lt;offset/&gt;&lt;offset_type&gt;0&lt;/offset_type&gt;&lt;run_as display_value="Operator Ctirad Navratil"&gt;6df6d9491bd445d81a46b80c9b4bcb09&lt;/run_as&gt;&lt;run_as_tz/&gt;&lt;run_dayofmonth&gt;1&lt;/run_dayofmonth&gt;&lt;run_dayofweek&gt;1&lt;/run_dayofweek&gt;&lt;run_period&gt;1970-01-01 00:03:00&lt;/run_period&gt;&lt;run_start&gt;2024-06-21 13:47:47&lt;/run_start&gt;&lt;run_time&gt;1969-12-31 23:00:00&lt;/run_time&gt;&lt;run_type&gt;periodically&lt;/run_type&gt;&lt;script&gt;&lt;![CDATA[(function() {
+    var maxParalelJobs = gs.getProperty('dhlex.purge.concurrent_jobs', 1);
+    var tableName = 'u_ecase_purge_table';
+    if (new global.tablesToPurge().getJob(tableName, maxParalelJobs)) {
+        new global.tablesToPurge().purgeFrom(tableName, current.name);
+    }
+})();]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sysauto_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;snc_operator_cnavrati&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-19 14:57:11&lt;/sys_created_on&gt;&lt;sys_id&gt;55e7e4f4dbe7ca54b1ba54ebd39619ba&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Run purging jobs_4&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysauto_script_55e7e4f4dbe7ca54b1ba54ebd39619ba&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;snc_operator_cnavrati&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-29 12:55:18&lt;/sys_updated_on&gt;&lt;time_zone/&gt;&lt;upgrade_safe&gt;false&lt;/upgrade_safe&gt;&lt;/sysauto_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>850610567</payload_hash>
+<remote_update_set display_value="DHLEX DBpurge CNA v2">e6c747061b7b4a90a32e433c8b4bcb72</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>snc_operator_mokrish1</sys_created_by>
+<sys_created_on>2024-08-05 10:03:53</sys_created_on>
+<sys_id>6ac747061b7b4a90a32e433c8b4bcb73</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19108b661550000001</sys_recorded_at>
+<sys_updated_by>snc_operator_mokrish1</sys_updated_by>
+<sys_updated_on>2024-08-05 10:03:53</sys_updated_on>
+<table/>
+<target_name>Run purging jobs_4</target_name>
+<type>Scheduled Script Execution</type>
+<update_domain>global</update_domain>
+<update_guid>f36c2fb7f4e74a106d38bdb9cf42ceef</update_guid>
+<update_guid_history>f36c2fb7f4e74a106d38bdb9cf42ceef:850610567,0ee7e4f419e7ca54a06ecf0c10d7e874:988767334</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sysauto_script_be05690ddbcb0a50b1ba54ebd3961929</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sysauto_script"&gt;&lt;sysauto_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;business_calendar/&gt;&lt;condition/&gt;&lt;conditional&gt;false&lt;/conditional&gt;&lt;entered_time/&gt;&lt;max_drift/&gt;&lt;name&gt;Run purging jobs_3&lt;/name&gt;&lt;offset/&gt;&lt;offset_type&gt;0&lt;/offset_type&gt;&lt;run_as display_value="Operator Ctirad Navratil"&gt;6df6d9491bd445d81a46b80c9b4bcb09&lt;/run_as&gt;&lt;run_as_tz/&gt;&lt;run_dayofmonth&gt;1&lt;/run_dayofmonth&gt;&lt;run_dayofweek&gt;1&lt;/run_dayofweek&gt;&lt;run_period&gt;1970-01-01 00:03:00&lt;/run_period&gt;&lt;run_start&gt;2024-06-21 13:45:45&lt;/run_start&gt;&lt;run_time&gt;1969-12-31 23:00:00&lt;/run_time&gt;&lt;run_type&gt;periodically&lt;/run_type&gt;&lt;script&gt;&lt;![CDATA[(function() {
+    var maxParalelJobs = gs.getProperty('dhlex.purge.concurrent_jobs', 1);
+    var tableName = 'u_ecase_purge_table';
+    if (new global.tablesToPurge().getJob(tableName, maxParalelJobs)) {
+        new global.tablesToPurge().purgeFrom(tableName, current.name);
+    }
+})();]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sysauto_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;snc_operator_cnavrati&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-25 17:31:26&lt;/sys_created_on&gt;&lt;sys_id&gt;be05690ddbcb0a50b1ba54ebd3961929&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_name&gt;Run purging jobs_3&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysauto_script_be05690ddbcb0a50b1ba54ebd3961929&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;snc_operator_cnavrati&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-29 12:55:18&lt;/sys_updated_on&gt;&lt;time_zone/&gt;&lt;upgrade_safe&gt;false&lt;/upgrade_safe&gt;&lt;/sysauto_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-77540377</payload_hash>
+<remote_update_set display_value="DHLEX DBpurge CNA v2">e6c747061b7b4a90a32e433c8b4bcb72</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>snc_operator_mokrish1</sys_created_by>
+<sys_created_on>2024-08-05 10:03:53</sys_created_on>
+<sys_id>a2c747061b7b4a90a32e433c8b4bcb74</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19108b6615c0000001</sys_recorded_at>
+<sys_updated_by>snc_operator_mokrish1</sys_updated_by>
+<sys_updated_on>2024-08-05 10:03:53</sys_updated_on>
+<table/>
+<target_name>Run purging jobs_3</target_name>
+<type>Scheduled Script Execution</type>
+<update_domain>global</update_domain>
+<update_guid>707c6fb7a9e74a108f1cb27064a8fd88</update_guid>
+<update_guid_history>707c6fb7a9e74a108f1cb27064a8fd88:-77540377,873365060bc70210fccb9b6543fa95b2:-1870132920,e87009117fcbc290bad59cc0b48aee6a:-643431241</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sysauto_script_3438a078dbe7ca54b1ba54ebd3961919</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sysauto_script"&gt;&lt;sysauto_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;business_calendar/&gt;&lt;condition/&gt;&lt;conditional&gt;false&lt;/conditional&gt;&lt;entered_time/&gt;&lt;max_drift/&gt;&lt;name&gt;Run purging jobs_7&lt;/name&gt;&lt;offset/&gt;&lt;offset_type&gt;0&lt;/offset_type&gt;&lt;run_as display_value="Operator Ctirad Navratil"&gt;6df6d9491bd445d81a46b80c9b4bcb09&lt;/run_as&gt;&lt;run_as_tz/&gt;&lt;run_dayofmonth&gt;1&lt;/run_dayofmonth&gt;&lt;run_dayofweek&gt;1&lt;/run_dayofweek&gt;&lt;run_period&gt;1970-01-01 00:03:00&lt;/run_period&gt;&lt;run_start&gt;2024-06-21 13:53:53&lt;/run_start&gt;&lt;run_time&gt;1969-12-31 23:00:00&lt;/run_time&gt;&lt;run_type&gt;periodically&lt;/run_type&gt;&lt;script&gt;&lt;![CDATA[(function() {
+    var maxParalelJobs = gs.getProperty('dhlex.purge.concurrent_jobs', 1);
+    var tableName = 'u_ecase_purge_table';
+    if (new global.tablesToPurge().getJob(tableName, maxParalelJobs)) {
+        new global.tablesToPurge().purgeFrom(tableName, current.name);
+    }
+})();]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sysauto_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;snc_operator_cnavrati&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-19 14:58:32&lt;/sys_created_on&gt;&lt;sys_id&gt;3438a078dbe7ca54b1ba54ebd3961919&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Run purging jobs_7&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysauto_script_3438a078dbe7ca54b1ba54ebd3961919&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;snc_operator_cnavrati&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-29 12:55:18&lt;/sys_updated_on&gt;&lt;time_zone/&gt;&lt;upgrade_safe&gt;false&lt;/upgrade_safe&gt;&lt;/sysauto_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1250004551</payload_hash>
+<remote_update_set display_value="DHLEX DBpurge CNA v2">e6c747061b7b4a90a32e433c8b4bcb72</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>snc_operator_mokrish1</sys_created_by>
+<sys_created_on>2024-08-05 10:03:52</sys_created_on>
+<sys_id>a6c747061b7b4a90a32e433c8b4bcb73</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19108b661400000001</sys_recorded_at>
+<sys_updated_by>snc_operator_mokrish1</sys_updated_by>
+<sys_updated_on>2024-08-05 10:03:52</sys_updated_on>
+<table/>
+<target_name>Run purging jobs_7</target_name>
+<type>Scheduled Script Execution</type>
+<update_domain>global</update_domain>
+<update_guid>246cebb77fe74a1048331ceb7e3954a8</update_guid>
+<update_guid_history>246cebb77fe74a1048331ceb7e3954a8:1250004551,8c8820f8a2e7ca54a83a45a1d62128d5:1683473227</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sysauto_script_341b003bdb364e10b1ba54ebd39619f8</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sysauto_script"&gt;&lt;sysauto_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;business_calendar/&gt;&lt;condition/&gt;&lt;conditional&gt;false&lt;/conditional&gt;&lt;entered_time/&gt;&lt;max_drift/&gt;&lt;name&gt;Run purging jobs_1&lt;/name&gt;&lt;offset/&gt;&lt;offset_type&gt;0&lt;/offset_type&gt;&lt;run_as display_value="Operator Ctirad Navratil"&gt;6df6d9491bd445d81a46b80c9b4bcb09&lt;/run_as&gt;&lt;run_as_tz/&gt;&lt;run_dayofmonth&gt;1&lt;/run_dayofmonth&gt;&lt;run_dayofweek&gt;1&lt;/run_dayofweek&gt;&lt;run_period&gt;1970-01-01 00:03:00&lt;/run_period&gt;&lt;run_start&gt;2024-06-21 13:41:41&lt;/run_start&gt;&lt;run_time&gt;1969-12-31 23:00:00&lt;/run_time&gt;&lt;run_type&gt;periodically&lt;/run_type&gt;&lt;script&gt;&lt;![CDATA[(function() {
+
+    var maxParalelJobs = gs.getProperty('dhlex.purge.concurrent_jobs', 1);
+    var tableName = 'u_ecase_purge_table';
+    if (new global.tablesToPurge().getJob(tableName, maxParalelJobs)) {
+        new global.tablesToPurge().purgeFrom(tableName, current.name);
+    }
+})();]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sysauto_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;snc_operator_cnavrati&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-21 16:43:07&lt;/sys_created_on&gt;&lt;sys_id&gt;341b003bdb364e10b1ba54ebd39619f8&lt;/sys_id&gt;&lt;sys_mod_count&gt;22&lt;/sys_mod_count&gt;&lt;sys_name&gt;Run purging jobs_1&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysauto_script_341b003bdb364e10b1ba54ebd39619f8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;snc_operator_cnavrati&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-29 12:55:18&lt;/sys_updated_on&gt;&lt;time_zone/&gt;&lt;upgrade_safe&gt;false&lt;/upgrade_safe&gt;&lt;/sysauto_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1864369029</payload_hash>
+<remote_update_set display_value="DHLEX DBpurge CNA v2">e6c747061b7b4a90a32e433c8b4bcb72</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>snc_operator_mokrish1</sys_created_by>
+<sys_created_on>2024-08-05 10:03:52</sys_created_on>
+<sys_id>e2c747061b7b4a90a32e433c8b4bcb73</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19108b6616a0000001</sys_recorded_at>
+<sys_updated_by>snc_operator_mokrish1</sys_updated_by>
+<sys_updated_on>2024-08-05 10:03:52</sys_updated_on>
+<table/>
+<target_name>Run purging jobs_1</target_name>
+<type>Scheduled Script Execution</type>
+<update_domain>global</update_domain>
+<update_guid>037cefb77ae74a10bc6c2590d0fa39e2</update_guid>
+<update_guid_history>037cefb77ae74a10bc6c2590d0fa39e2:1864369029,dab768b4e6e7ca547791f82b488ad4f9:-1613765184,da43a506acc7021049a83a21d09824e2:-2042501789,2ed2a1c2aec70210af4513e90c556d9c:-2042501789,ac7009114ccbc2904110563618fd1b6e:1675211306</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sysauto_script_2018a078dbe7ca54b1ba54ebd3961910</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sysauto_script"&gt;&lt;sysauto_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;business_calendar/&gt;&lt;condition/&gt;&lt;conditional&gt;false&lt;/conditional&gt;&lt;entered_time/&gt;&lt;max_drift/&gt;&lt;name&gt;Run purging jobs_6&lt;/name&gt;&lt;offset/&gt;&lt;offset_type&gt;0&lt;/offset_type&gt;&lt;run_as display_value="Operator Ctirad Navratil"&gt;6df6d9491bd445d81a46b80c9b4bcb09&lt;/run_as&gt;&lt;run_as_tz/&gt;&lt;run_dayofmonth&gt;1&lt;/run_dayofmonth&gt;&lt;run_dayofweek&gt;1&lt;/run_dayofweek&gt;&lt;run_period&gt;1970-01-01 00:03:00&lt;/run_period&gt;&lt;run_start&gt;2024-06-21 13:51:51&lt;/run_start&gt;&lt;run_time&gt;1969-12-31 23:00:00&lt;/run_time&gt;&lt;run_type&gt;periodically&lt;/run_type&gt;&lt;script&gt;&lt;![CDATA[(function() {
+    var maxParalelJobs = gs.getProperty('dhlex.purge.concurrent_jobs', 1);
+    var tableName = 'u_ecase_purge_table';
+    if (new global.tablesToPurge().getJob(tableName, maxParalelJobs)) {
+        new global.tablesToPurge().purgeFrom(tableName, current.name);
+    }
+})();]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sysauto_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;snc_operator_cnavrati&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-19 14:57:58&lt;/sys_created_on&gt;&lt;sys_id&gt;2018a078dbe7ca54b1ba54ebd3961910&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Run purging jobs_6&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysauto_script_2018a078dbe7ca54b1ba54ebd3961910&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;snc_operator_cnavrati&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-29 12:55:18&lt;/sys_updated_on&gt;&lt;time_zone/&gt;&lt;upgrade_safe&gt;false&lt;/upgrade_safe&gt;&lt;/sysauto_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>321853607</payload_hash>
+<remote_update_set display_value="DHLEX DBpurge CNA v2">e6c747061b7b4a90a32e433c8b4bcb72</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>snc_operator_mokrish1</sys_created_by>
+<sys_created_on>2024-08-05 10:03:52</sys_created_on>
+<sys_id>eac747061b7b4a90a32e433c8b4bcb72</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19108b661470000001</sys_recorded_at>
+<sys_updated_by>snc_operator_mokrish1</sys_updated_by>
+<sys_updated_on>2024-08-05 10:03:52</sys_updated_on>
+<table/>
+<target_name>Run purging jobs_6</target_name>
+<type>Scheduled Script Execution</type>
+<update_domain>global</update_domain>
+<update_guid>0e6ca7b7b7e74a108e53f360653c7204</update_guid>
+<update_guid_history>0e6ca7b7b7e74a108e53f360653c7204:321853607,a918a0785be7ca54ab7ea0d52db63d13:-1175427027</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sysauto_script_9ef7a4f4dbe7ca54b1ba54ebd39619c8</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sysauto_script"&gt;&lt;sysauto_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;business_calendar/&gt;&lt;condition/&gt;&lt;conditional&gt;false&lt;/conditional&gt;&lt;entered_time/&gt;&lt;max_drift/&gt;&lt;name&gt;Run purging jobs_5&lt;/name&gt;&lt;offset/&gt;&lt;offset_type&gt;0&lt;/offset_type&gt;&lt;run_as display_value="Operator Ctirad Navratil"&gt;6df6d9491bd445d81a46b80c9b4bcb09&lt;/run_as&gt;&lt;run_as_tz/&gt;&lt;run_dayofmonth&gt;1&lt;/run_dayofmonth&gt;&lt;run_dayofweek&gt;1&lt;/run_dayofweek&gt;&lt;run_period&gt;1970-01-01 00:03:00&lt;/run_period&gt;&lt;run_start&gt;2024-06-21 13:49:49&lt;/run_start&gt;&lt;run_time&gt;1969-12-31 23:00:00&lt;/run_time&gt;&lt;run_type&gt;periodically&lt;/run_type&gt;&lt;script&gt;&lt;![CDATA[(function() {
+    var maxParalelJobs = gs.getProperty('dhlex.purge.concurrent_jobs', 1);
+    var tableName = 'u_ecase_purge_table';
+    if (new global.tablesToPurge().getJob(tableName, maxParalelJobs)) {
+        new global.tablesToPurge().purgeFrom(tableName, current.name);
+    }
+})();]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sysauto_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;snc_operator_cnavrati&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-19 14:57:32&lt;/sys_created_on&gt;&lt;sys_id&gt;9ef7a4f4dbe7ca54b1ba54ebd39619c8&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Run purging jobs_5&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysauto_script_9ef7a4f4dbe7ca54b1ba54ebd39619c8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;snc_operator_cnavrati&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-29 12:55:18&lt;/sys_updated_on&gt;&lt;time_zone/&gt;&lt;upgrade_safe&gt;false&lt;/upgrade_safe&gt;&lt;/sysauto_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1778761511</payload_hash>
+<remote_update_set display_value="DHLEX DBpurge CNA v2">e6c747061b7b4a90a32e433c8b4bcb72</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>snc_operator_mokrish1</sys_created_by>
+<sys_created_on>2024-08-05 10:03:53</sys_created_on>
+<sys_id>eec747061b7b4a90a32e433c8b4bcb73</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19108b6614e0000001</sys_recorded_at>
+<sys_updated_by>snc_operator_mokrish1</sys_updated_by>
+<sys_updated_on>2024-08-05 10:03:53</sys_updated_on>
+<table/>
+<target_name>Run purging jobs_5</target_name>
+<type>Scheduled Script Execution</type>
+<update_domain>global</update_domain>
+<update_guid>836cebb705e74a10ce05050654d556e0</update_guid>
+<update_guid_history>836cebb705e74a10ce05050654d556e0:1778761511,8ff7607899e7ca547b1c11a463b48078:-447299708</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
