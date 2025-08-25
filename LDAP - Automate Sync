@@ -1,0 +1,78 @@
+// There are 4 LDAP servers based on PRG, KUL, PHX and AVI. 
+// This fix script identify the Users who requires LDAP sync. It fetches the records from SYS_USER table and forms a FILTER condition based on the user's source location.
+// IF User source is from KUL, It create a LDPA OU filter condition and updates in respective OU definition, which associates with DATA SOURCE
+// Once the Filter is updated, we are executing the the DATA SOURCE from SCHEDULED IMPORTS.
+
+var prg_filter = "(|";
+var kul_filter = "(|";
+var phx_filter = "(|";
+var avi_filter = "(|";
+
+
+var grSysUser = new GlideRecord('sys_user');
+grSysUser.addQuery('u_ldap_sync',true);
+//grSysUser.setLimit(10);
+grSysUser.query();
+while (grSysUser.next()) {
+    var ldap_source = grSysUser.source;
+    if (ldap_source.indexOf('DC=prg-dc') !== -1) {
+        prg_filter += "(sAMAccountName=" + grSysUser.user_name + ")";
+    } else if (ldap_source.indexOf('DC=kul-dc') !== -1) {
+        kul_filter += "(sAMAccountName=" + grSysUser.user_name + ")";
+    } else if (ldap_source.indexOf('DC=phx-dc') !== -1) {
+        phx_filter += "(sAMAccountName=" + grSysUser.user_name + ")";
+    } else {
+        avi_filter += "(sAMAccountName=" + grSysUser.user_name + ")";
+    }
+}
+
+kul_filter += ")";
+prg_filter += ")";
+phx_filter += ")";
+avi_filter += ")";
+
+if (!gs.nil(prg_filter)) {
+    var prgOu = new GlideRecord('ldap_ou_config');
+    prgOu.get('3495dc91472766944686b7da216d4330');
+    prgOu.setValue('filter', prg_filter);
+    prgOu.update();
+    var prgSchedule = new GlideRecord('scheduled_import_set');
+    prgSchedule.get('816bb97947a3a6184686b7da216d43b5');
+    SncTriggerSynchronizer.executeNow(prgSchedule);
+
+}
+
+if (!gs.nil(kul_filter)) {
+    var kulOu = new GlideRecord('ldap_ou_config');
+    kulOu.get('b2b4585d47a366944686b7da216d435d');
+    kulOu.setValue('filter', kul_filter);
+    kulOu.update();
+    var kulSchedule = new GlideRecord('scheduled_import_set');
+    kulSchedule.get('3c281cd947e766944686b7da216d4338');
+    SncTriggerSynchronizer.executeNow(kulSchedule);
+
+}
+
+
+if (!gs.nil(phx_filter)) {
+    var phxOu = new GlideRecord('ldap_ou_config');
+    phxOu.get('dd193df54763a6184686b7da216d4318');
+    phxOu.setValue('filter', phx_filter);
+    phxOu.update();
+    var phxSchedule = new GlideRecord('scheduled_import_set');
+    phxSchedule.get('e47894dd47e766944686b7da216d4341');
+    SncTriggerSynchronizer.executeNow(phxSchedule);
+
+}
+
+
+if (!gs.nil(avi_filter)) {
+    var aviOu = new GlideRecord('ldap_ou_config');
+    aviOu.get('495a713547a3a6184686b7da216d43d6');
+    aviOu.setValue('filter', avi_filter);
+    aviOu.update();
+    var aviSchedule = new GlideRecord('scheduled_import_set');
+    aviSchedule.get('2d7b3d7d47a3a6184686b7da216d43af');
+    SncTriggerSynchronizer.executeNow(aviSchedule);
+
+}
