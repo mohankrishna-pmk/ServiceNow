@@ -1,3 +1,8 @@
+// Create a record producer
+// Table Name : sys_data_source
+
+Script...
+
 var importSetTableName = "u_opensuma_ecase_update";
 
 var transmap = new GlideRecord('sys_transform_map');
@@ -46,3 +51,8 @@ else{
 // Since we inserted data source already, abort additional insert by record producer
 
 current.setAbortAction(true);
+
+***************
+
+Create a data source : Opensua_eCase_manual_upload
+Transform map: Opensuma eCase Updates
