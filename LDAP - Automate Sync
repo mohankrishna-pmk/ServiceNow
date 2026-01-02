@@ -76,3 +76,18 @@ if (!gs.nil(avi_filter)) {
     SncTriggerSynchronizer.executeNow(aviSchedule);
 
 }
+
+*************************************************************
+
+Filter condition : OR Example --> (|(sAMAccountName=abadry)(sAMAccountName=mokrish1))
+(|(OU=SA)(OU=AE)
+
+1. Scheduled Data Import: QT-Sync : PHX - DC
+1.1 Data Source : QT-phx-dc.dhl.com/Users
+
+2. Data Source: QT-phx-dc.dhl.com/Users
+2.1 Import Set Table Name : ldap_import
+2.2 Type : LDAP
+2.3 LDAP Target : QT-Users Sync - PHX-DC  
+
+
