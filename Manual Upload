@@ -1,0 +1,48 @@
+var importSetTableName = "u_opensuma_ecase_update";
+
+var transmap = new GlideRecord('sys_transform_map');
+transmap.addQuery('source_table',importSetTableName);
+transmap.addQuery('target_table','x_104357_sec_inc_open_suma_case');
+transmap.addQuery('active',true);
+transmap.query();
+if(transmap.next()){
+
+var transformMapID = transmap.sys_id;
+
+// Setup data source for attachment
+
+current.name = "Opensua_eCase_manual_upload";
+current.import_set_table_name = importSetTableName;
+current.file_retrieval_method = "Attachment";
+current.type = "File";
+current.format = "Excel";
+current.header_row = 1;
+current.sheet_number = 1;
+current.insert();
+
+// Process excel file
+var loader = new GlideImportSetLoader();
+var importSetRec = loader.getImportSetGr(current);
+var ranload = loader.loadImportSetTable(importSetRec, current);
+importSetRec.state = "loaded";
+importSetRec.update();
+
+// Transform import set
+
+var transformWorker = new GlideImportSetTransformerWorker(importSetRec.sys_id, transformMapID);
+transformWorker.setBackground(true);
+transformWorker.start();
+
+gs.addInfoMessage("Data import may take time load, please reload list to see latest data.");
+
+var redirectURL = "x_104357_sec_inc_open_suma_case_list.do";
+
+producer.redirect = redirectURL;
+
+}
+else{
+	gs.addErrorMessage("Technical Error. Please contact ServiceNow support team");
+}
+// Since we inserted data source already, abort additional insert by record producer
+
+current.setAbortAction(true);
