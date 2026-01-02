@@ -1,0 +1,161 @@
+(function scriptedWebServiceOperation(request, response) {
+    var doc = new XMLDocument2();
+    doc.parseXML(soapRequestXML);
+ //   gs.info("eCASEDMLV1:"+doc);
+    var statusCode = '';
+    var statusDescription = '';
+    var description = '';
+    var caseNumber = '';
+    var clientUniqueIdentifier = '';
+    var fldName = '';
+    var validation = '';
+    var sysId = '';
+    var results = [];
+    var node = doc.getFirstNode("//Case/Bd");
+    var caseType = doc.getNodeText('//CaseType');
+    if (caseType == 'DeniedParty' || caseType == 'SecMCO' || caseType == 'PCM' || caseType == 'ICS2' || caseType == 'OpenSumA') {
+        clientUniqueIdentifier = doc.getNodeText('//ClientUniqueIdentifier');
+        gs.info("caseType eCASEDML:" + caseType);
+       
+        switch (caseType) {
+            case 'DeniedParty':
+                gs.info("DeniedParty Switch");
+                var deniedParty = new global.DeniedParty_WS();
+                results = deniedParty.insertDeniedParty(doc);
+                break;
+
+            case 'SecMCO':
+                gs.info("SecMCO Switch");
+                var secmco = new global.SecMCOV2_WS();
+                results = secmco.insertSecMCO(doc);
+                break;
+
+            case 'PCM':
+                gs.info("PCMCase Switch");
+                var pcm = new global.PCMCase_WS();
+                results = pcm.insertPCMCase(doc);
+                break;
+				
+			case 'ICS2':
+                var ics = new global.ICS_eCase_Parse();
+                results = ics.insertXml_parsing(doc);
+                break;
+
+							case 'OpenSumA':
+				gs.info("OpenSumA Switch");
+                var Os = new global.OpenSumA_eCase_Parse();
+                results = Os.insertXml_parsing(doc);
+                break;
+				
+            default:
+                statusCode = "20001";
+                statusDescription = "The request was failed";
+                break;
+		
+
+        }
+        if (results[0] == 1) {
+            statusCode = "10001";
+            statusDescription = "Case created successfully";
+            caseNumber = results[1];
+            description = "Created";
+            sysId = results[5];
+        }
+		else if (results[0] == 20) {
+            statusCode = "10001";
+            statusDescription = "The request was failed";
+            description = results[2];
+            validation = results[3];
+            fldName = results[4];
+        }
+		else if (results[0] == 0) {
+            statusCode = "20001";
+            statusDescription = "The request was failed";
+            description = results[2];
+            validation = results[3];
+            fldName = results[4];
+        }//this else if condition is used by PCM & ICS2 Module 
+		else if (results[0] == 10) {
+            statusCode = "10001";
+            statusDescription = results[2];
+            caseNumber = results[1];
+            description = results[4];
+            sysId = results[5];
+        }
+    } else {
+        statusCode = "20001";
+        statusDescription = "The request was failed";
+        description = "Bad Request";
+        validation = "Validation Failed";
+        fldName = "CaseType is empty";
+    }
+    var hdr = doc.getNode("//Hdr");
+    var hdrId = hdr.getAttribute('Id');
+    var hdrVer = "1";
+    var tid = doc.getNode("//TID");
+    var src = tid.getAttribute('Src');
+    var tidVal = tid.getAttribute('TID');
+    var sndr = doc.getNode("//Sndr");
+    var rcp = doc.getNode("//Rcp");
+    var sendAppCd = rcp.getAttribute('AppCd');
+    var sendAppVer = rcp.getAttribute('AppVer');
+    var sendAppNm = rcp.getAttribute('AppNm');
+    var receiveAppCd = sndr.getAttribute('AppCd');
+    var receiveAppVer = sndr.getAttribute('AppVer');
+    var receiveAppNm = sndr.getAttribute('AppNm');
+    var fldIdName = '';
+    var fldIdXpath = '';
+    var corrId = '';
+    var hdrDtm = new GlideDateTime().getDisplayValue();
+
+    var headerElement = "<Hdr Id='" + hdrId + "' Ver='" + hdrVer + "' Dtm='" + hdrDtm + "'> \n";
+    headerElement = headerElement + "<GI> \n";
+    headerElement = headerElement + "<TID Src='" + src + "' TID='" + tidVal + "' /> \n";
+    headerElement = headerElement + "</GI> \n";
+    headerElement = headerElement + "<Sndr AppCd='" + sendAppCd + "' AppVer='" + sendAppVer + "'  AppNm='" + sendAppNm + "' /> \n";
+    headerElement = headerElement + "<Rcp AppCd='" + receiveAppCd + "' AppVer='" + receiveAppVer + "'  AppNm='" + receiveAppNm + "' /> \n";
+    headerElement = headerElement + "</Hdr> \n";
+    var errorElement = "<BOErr> \n";
+    errorElement = errorElement + "<BOId /> \n";
+    errorElement = errorElement + "<FldErr> \n";
+    errorElement = errorElement + "<FldId FldNm='" + fldIdName + "' FldXPth='" + fldIdXpath + "'/> \n";
+    errorElement = errorElement + "<ErrMsgDtl> \n";
+    errorElement = errorElement + "<Sev>" + "" + "</Sev> \n";
+    errorElement = errorElement + "<MsgCIgd>" + "" + "</MsgCIgd> \n";
+    errorElement = errorElement + "<MsgClg>" + "" + "</MsgClg> \n";
+    errorElement = errorElement + "<Dsc>" + validation + "</Dsc> \n";
+    errorElement = errorElement + "<DtlDsc>" + fldName + "</DtlDsc> \n";
+    errorElement = errorElement + "</ErrMsgDtl> \n";
+    errorElement = errorElement + "</FldErr> \n";
+    errorElement = errorElement + "</BOErr> \n";
+    var bodyElement = "<Case> \n";
+    bodyElement = bodyElement + "" + headerElement;
+    bodyElement = bodyElement + "<Bd> \n";
+    bodyElement = bodyElement + "<SysID>" + sysId + "</SysID> \n";
+    bodyElement = bodyElement + "<CaseNumber>" + caseNumber + "</CaseNumber> \n";
+    bodyElement = bodyElement + "<ClientUniqueIdentifier>" + clientUniqueIdentifier + "</ClientUniqueIdentifier> \n";
+    bodyElement = bodyElement + "</Bd> \n";
+    bodyElement = bodyElement + "<RespStatus> \n";
+    bodyElement = bodyElement + "<GI CorrId='" + corrId + "'/> \n";
+    bodyElement = bodyElement + "<Sev></Sev> \n";
+    bodyElement = bodyElement + "<MsgCIgId>" + statusCode + "</MsgCIgId> \n";
+    bodyElement = bodyElement + "<MsgClg>DHL</MsgClg> \n";
+    bodyElement = bodyElement + "<Dsc>" + description + "</Dsc> \n";
+    bodyElement = bodyElement + "<DtlDsc>" + statusDescription + "</DtlDsc> \n";
+    bodyElement = bodyElement + "" + errorElement;
+    bodyElement = bodyElement + "</RespStatus> \n";
+    bodyElement = bodyElement + "</Case> \n";
+    var xmldoc = new XMLDocument2();
+    xmldoc.parseXML(bodyElement);
+    var rootNode = xmldoc.getDocumentElement();
+    xmldoc.setCurrentElement(rootNode);
+    response.soapResponseElement = xmldoc.getDocumentElement();
+	// Below code added by Sharath for capturing the response message which is sent to DPA into the staging table
+    if (caseType == 'DeniedParty') {
+        var deniedParty1 = new global.DeniedParty_WS();
+        deniedParty.UpdateResponse(results[5], response);
+    }
+
+})(request, response);
+
+
